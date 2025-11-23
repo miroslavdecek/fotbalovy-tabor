@@ -1,32 +1,132 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fotbalový Tábor</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotbalový tábor TJ Sokol Sloveč 2025</title>
+  <link rel="icon" href="logoslovec.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="StylSlovec.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Fotbalový Tábor</h1>
-    <div id="countdown"></div>
-  </header>
 
-  <section class="info">
-    <h2>Informace</h2>
-    <p>Termín: 27. 6. 2025 ve 12:00</p>
-    <p>Místo: TJ Sokol Sloveč</p>
+<header>
+  <div class="overlay"></div> <div class="header-content">
+    <img src="logoslovec.png" alt="Logo TJ Sokol Sloveč" class="logo">
+    <h1>Fotbalový tábor<br>TJ Sokol Sloveč 2025</h1>
+    <p class="subtitle">Zažij týden plný fotbalu, zábavy a nových kamarádů!</p>
+    
+    <div class="countdown-container">
+      <p>Do výkopu zbývá:</p>
+      <div class="countdown" id="countdown">Načítání odpočtu…</div>
+    </div>
 
-    <a href="https://maps.app.goo.gl/nzrj3z7UJwuUwS7Q7" target="_blank">
-      Otevřít na mapě
-    </a>
+    <a href="#prihlaska" class="cta-button">Chci se přihlásit</a>
+  </div>
+</header>
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7394700798927!2d15.2611!3d50.2221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dab90d34dd0cf%3A0x68a29c7b7d7e9c12!2sTJ%20Sokol%20Sloveč!5e0!3m2!1scs!2scz!4v1234567890"
-      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </section>
+<section id="otabore">
+  <h2>O táboře</h2>
+  <div class="content-wrapper">
+    <p>Již více než <strong>30 let tradice</strong>! Letní pobytový tábor plný fotbalu, her, zážitků a výletů. Nabízíme skvělé zázemí fotbalového klubu TJ Sokol Sloveč – travnaté hřiště, tělocvičnu, stoly na ping-pong i klubovnu s ohništěm.</p>
+    <p>O děti se starají zkušení vedoucí a trenéři (licence B, FK Bohemia Poděbrady). Zdravotní dozor zajišťuje sestra z Nemocnice Městec Králové.</p>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<section class="bg-light">
+  <h2>Důležité informace</h2>
+  <div class="info-grid">
+    <div class="info-box">
+      <div class="icon">📍</div>
+      <h3>Kde</h3>
+      <p><strong>Areál TJ Sokol Sloveč</strong><br>Sloveč 58, Městec Králové</p>
+      <a href="https://mapy.cz/s/kuzojefufo" target="_blank" class="small-link">Ukázat na mapě</a>
+    </div>
+    <div class="info-box">
+      <div class="icon">📅</div>
+      <h3>Kdy</h3>
+      <p><strong>12. – 17. srpna 2025</strong><br>(úterý až neděle)</p>
+    </div>
+    <div class="info-box">
+      <div class="icon">👦</div>
+      <h3>Pro koho</h3>
+      <p><strong>Kluci a holky</strong><br>Věk 6 – 15 let</p>
+    </div>
+    <div class="info-box">
+      <div class="icon">💰</div>
+      <h3>Cena</h3>
+      <p><strong>3 800 Kč</strong><br>(Záloha 1 000 Kč)</p>
+    </div>
+  </div>
+</section>
+
+<section>
+    <h2>Kde nás najdete</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.968763647466!2d15.33785497693683!3d50.23661450284824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c3d977366300b%3A0x42f2b36934440c83!2sSlove%C4%8D%20129%2C%20289%2003%20Slove%C4%8D!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<section id="fotogalerie" class="bg-light">
+  <h2>Jak to u nás vypadá</h2>
+  <div class="gallery-grid">
+      <div class="gallery-item">
+          <img src="bazen.jpg" alt="Koupání v bazénu">
+          <div class="caption">Letní osvěžení</div>
+      </div>
+      <div class="gallery-item">
+          <img src="pozadi vrsku.jpg" alt="Trénink na hřišti">
+          <div class="caption">Každodenní tréninky</div>
+      </div>
+      <div class="gallery-item">
+          <img src="detipredbudovou.jpg" alt="Společné foto">
+          <div class="caption">Skvělá parta</div>
+      </div>
+  </div>
+  <p style="text-align:center; margin-top: 1rem;"><em>Další fotky najdete na našem Facebooku.</em></p>
+</section>
+
+<section id="prihlaska" class="highlight-section">
+    <h2>Chceš jet s námi?</h2>
+    <p>Kapacita tábora je omezená. Zajisti si své místo včas!</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiuPcXUE-ZioJe3ZrrKcq1oGJnTpSAuhkrPLkOuSD9CqdGbA/viewform?usp=sf_link" 
+       class="cta-button large" 
+       target="_blank">Vyplnit online přihlášku</a>
+</section>
+
+<section>
+    <h2>Co říkají rodiče a děti</h2>
+    <div class="testimonials">
+        <blockquote>
+            „Syn byl loni poprvé a letos jede znovu. Skvělá parta a trenéři, kteří se dětem opravdu věnují.“
+            <footer>– Jana N., maminka</footer>
+        </blockquote>
+        <blockquote>
+            „Nejlepší týden prázdnin. Hlavně turnaje a koupaliště!“
+            <footer>– Tomáš, 11 let</footer>
+        </blockquote>
+    </div>
+</section>
+
+<section id="kontakt" class="footer-contact">
+    <h2>Kontakt</h2>
+    <p><strong>Vedoucí tábora:</strong> JUDr. Milan Děček, Ph.D.</p>
+    <p>📞 <a href="tel:+420604648665">+420 604 648 665</a></p>
+    <p>📧 <a href="mailto:tjsokolslovec@gmail.com">tjsokolslovec@gmail.com</a></p>
+</section>
+
+<footer>
+  <p>© 2025 TJ Sokol Sloveč | Fotbalový tábor</p>
+</footer>
+
+<script src="JSSlovec.js"></script>
 </body>
 </html>
