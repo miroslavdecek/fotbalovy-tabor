@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const countdownEl = document.getElementById('countdown');
   if (!countdownEl) return;
 
-  // Začátek tábora: 12. srpna 2025 v 09:00
-  const start = new Date(2025, 7, 12, 9, 0, 0); // August = 7 (měsíce jsou 0-indexované)
+  // Začátek tábora: 13. srpna 2025 v 12:00
+  const start = new Date(2026, 7, 3, 12, 0, 0); // August = 7 (měsíce jsou 0-indexované)
   // Konec tábora: 12. – 17. srpna (6 dní)
   const end = new Date(start);
   end.setDate(end.getDate() + 6);
