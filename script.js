@@ -1,4 +1,4 @@
-const targetDate = new Date("2026-06-27T12:00:00").getTime();
+const targetDate = new Date("2026-07-03T12:00:00").getTime();
 // Element pro zobrazení odpočtu
 const countdown = document.getElementById("countdown");
 
